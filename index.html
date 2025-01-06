@@ -18,27 +18,52 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
-            text-align: center;
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5rem 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         main {
             padding: 2rem;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .button:hover {
+            background-color: #45a049;
         }
         footer {
             background-color: #333;
             color: white;
             padding: 1rem 0;
+            text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
         }
     </style>
 </head>
@@ -51,10 +76,18 @@
     <header>
         <h1>Welcome to El Roi - Test Moria</h1>
     </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="subpage.html">Sub Page</a>
+    </nav>
+
     <main>
         <p>This is a test website created for <strong>El Roi 伊利羅以有限公司</strong>.</p>
         <p>Visit our official website for more details: <a href="https://elroi.com" target="_blank">elroi.com</a></p>
+        <a class="button" href="subpage.html">Go to Sub Page</a>
     </main>
+
     <footer>
         <p>&copy; 2025 El Roi 伊利羅以有限公司. All Rights Reserved.</p>
     </footer>
