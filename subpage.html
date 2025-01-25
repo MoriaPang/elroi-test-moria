@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Google tag (gtag.js) -->
+     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5PD33KW3F"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -24,6 +23,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N3MX6SNS');</script>
 <!-- End Google Tag Manager -->
     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Roi - Sub Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,6 +57,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             padding: 2rem;
             text-align: center;
         }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form div {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -67,12 +102,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
 </head>
 <body>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3MX6SNS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
     <header>
         <h1>Sub Page</h1>
     </header>
@@ -83,8 +112,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
 
     <main>
-        <p>Welcome to the Sub Page!</p>
-        <p>More content can go here as needed.</p>
+        <h2>Submit Your Visit Information</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="visit-datetime">Visit Date & Time:</label>
+                <input type="datetime-local" id="visit-datetime" name="visit-datetime" required>
+            </div>
+            <div>
+                <label for="visit-location">Visit Location:</label>
+                <select id="visit-location" name="visit-location" required>
+                    <option value="">Select a location</option>
+                    <option value="台北">臺北</option>
+                    <option value="台中">臺中</option>
+                    <option value="台南">臺南</option>
+                    <option value="高雄">高雄</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
     <footer>
