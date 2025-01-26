@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5PD33KW3F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5PD33KW3F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-J5PD33KW3F');
-</script>
-    
+      gtag('config', 'G-J5PD33KW3F');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Roi - Sub Page</title>
-    
+
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N3MX6SNS');</script>
-<!-- End Google Tag Manager -->
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Roi - Sub Page</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N3MX6SNS');</script>
+    <!-- End Google Tag Manager -->
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,18 +52,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
         main {
             padding: 2rem;
-            text-align: center;
         }
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        form div {
-            margin-bottom: 1rem;
+        .form-group {
+            margin-bottom: 1.5rem;
         }
         label {
             display: block;
@@ -76,14 +64,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         input, select, button {
             width: 100%;
             padding: 0.5rem;
+            margin: 0.5rem 0;
             font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
         }
         button {
             background-color: #4CAF50;
             color: white;
-            font-weight: bold;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
@@ -102,8 +90,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3MX6SNS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header>
-        <h1>Sub Page</h1>
+        <h1>El Roi - Sub Page</h1>
     </header>
 
     <nav>
@@ -113,12 +106,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <main>
         <h2>Submit Your Visit Information</h2>
-        <form action="#" method="post">
-            <div>
+        <form action="thank-you.html" method="get">
+            <div class="form-group">
                 <label for="visit-datetime">Visit Date & Time:</label>
                 <input type="datetime-local" id="visit-datetime" name="visit-datetime" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="visit-location">Visit Location:</label>
                 <select id="visit-location" name="visit-location" required>
                     <option value="">Select a location</option>
@@ -128,11 +121,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <option value="高雄">高雄</option>
                 </select>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
             </div>
